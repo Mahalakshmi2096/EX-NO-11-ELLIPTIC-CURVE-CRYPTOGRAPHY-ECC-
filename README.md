@@ -85,14 +85,14 @@ int main() {
  scanf("%lld", &privateB);
  publicA = scalarMultiplication(G, privateA, a, p); 
  publicB = scalarMultiplication(G, privateB, a, p);
- printf("Alice's public key: (%lld, %lld)\n", publicA.x, publicA.y);
- printf("Bob's public key: (%lld, %lld)\n", publicB.x, publicB.y);
+ printf("Maha's public key: (%lld, %lld)\n", publicA.x, publicA.y);
+ printf("Lakshmi's public key: (%lld, %lld)\n", publicB.x, publicB.y);
 
  sharedSecretA = scalarMultiplication(publicB, privateA, a, p); 
  sharedSecretB = scalarMultiplication(publicA, privateB, a, p); 
- printf("Shared secret computed by Alice: (%lld, %lld)\n", sharedSecretA.x,
+ printf("Shared secret computed by Maha: (%lld, %lld)\n", sharedSecretA.x,
 sharedSecretA.y);
- printf("Shared secret computed by Bob: (%lld, %lld)\n", sharedSecretB.x,
+ printf("Shared secret computed by Lakshmi: (%lld, %lld)\n", sharedSecretB.x,
 sharedSecretB.y);
 
  if (sharedSecretA.x == sharedSecretB.x && sharedSecretA.y == sharedSecretB.y) {
@@ -105,7 +105,8 @@ sharedSecretB.y);
 ```
 ## Output:
 
-<img width="1614" height="778" alt="image" src="https://github.com/user-attachments/assets/62f0ba2e-676e-4a95-b1b4-ccecb8690c8d" />
+<img width="1611" height="767" alt="image" src="https://github.com/user-attachments/assets/48446b84-3530-447e-9109-581d006a6b00" />
+
 
 ## Result:
 The program is executed successfully
